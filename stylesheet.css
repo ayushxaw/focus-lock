@@ -1,0 +1,13 @@
+/* Focus Lock Extension - Stylesheet */
+
+.focus-lock-indicator {
+    padding: 0 8px;
+}
+
+.focus-lock-indicator.unlocked {
+    color: #4ade80; /* Bright green - visually distinct "free" state */
+}
+
+.focus-lock-indicator.locked {
+    color: #f87171; /* Bright red - visually distinct "locked" state */
+}

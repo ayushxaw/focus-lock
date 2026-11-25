@@ -1,0 +1,40 @@
+FOCUS LOCK HELPER
+=================
+
+LOCK OR UNLOCK
+--------------
+Focus the window you want to stay in, then click the open circle in the
+GNOME top bar. To unlock, click the filled circle, enter your Focus Lock
+PIN, and press Enter.
+
+CHANGE THE FOCUS LOCK PIN
+-------------------------
+Open Terminal in this project folder and run the PIN command.
+
+./pin.py --set-pin
+
+From another folder, run the command using the installed extension path.
+
+"${XDG_DATA_HOME:-$HOME/.local/share}/gnome-shell/extensions/focuslock@kavinda/pin.py" --set-pin
+
+Enter your new 4–12 digit PIN twice. This is your Focus Lock PIN.
+The new PIN works the next time you submit the unlock prompt.
+
+IF YOU GET STUCK
+----------------
+Closing the focused window releases Focus Lock. You can also turn the
+extension off in the GNOME Extensions app or run the disable command.
+
+gnome-extensions disable focuslock@kavinda
+
+Run the enable command to turn Focus Lock back on.
+
+gnome-extensions enable focuslock@kavinda
+
+AFTER AN UPDATE
+---------------
+Sign out of GNOME and back in to load updated extension code.
+
+Run the info command to check whether the extension is enabled.
+
+gnome-extensions info focuslock@kavinda

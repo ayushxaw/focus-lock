@@ -1,0 +1,6 @@
+# Local credentials and Python cache
+/unlock-pin.txt
+/focus-lock.pin
+/pin
+__pycache__/
+*.pyc
